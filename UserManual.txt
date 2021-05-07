@@ -1,0 +1,19 @@
+## Always:
+cd path\to\your\working\directory
+
+## First time :
+
+## First, make sure your current directory is the one where the code is located (cd path/XTConsistency)
+## Create a new test environment to avoid changing your original python packages
+conda create -n testenv -y python=3.6
+conda activate testenv
+## Then install required packages
+pip install -r requirements.txt
+## Run the file
+python depth.py
+
+## Not the first time :
+conda activate testenv
+python depth_old.py
+##or
+python BinaryImages_and_Compressions.py
